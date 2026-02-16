@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+📝 Notes App (MERN Stack)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple full-stack Notes application with authentication.
+Users can register, login, and manage personal notes.
 
-## Available Scripts
+🚀 Tech Stack
 
-In the project directory, you can run:
+Frontend
 
-### `npm start`
+React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React Router
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Tailwind CSS
 
-### `npm test`
+Backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Node.js
 
-### `npm run build`
+Express.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+MongoDB Atlas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Mongoose
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+JWT Authentication
 
-### `npm run eject`
+bcrypt
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🔐 Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+User Registration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+User Login (JWT authentication)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Protected Routes
 
-## Learn More
+Create Notes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Read Notes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Update Notes
 
-### Code Splitting
+Delete Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+User-specific data isolation
 
-### Analyzing the Bundle Size
+🗂️ Project Structure
+client/        → React frontend
+server/
+  ├── config/  → DB connection
+  ├── models/  → Mongoose schemas
+  ├── routes/  → API routes
+  ├── controllers/
+  ├── middleware/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🌐 Database
 
-### Making a Progressive Web App
+This project uses MongoDB Atlas (cloud database).
+Data is stored remotely and accessed via Mongoose using a secure connection string.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🔒 Authentication
 
-### Advanced Configuration
+Passwords are hashed using bcrypt.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+JWT tokens are stored in localStorage.
 
-### Deployment
+Protected routes require a valid token.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+📌 Future Improvements
 
-### `npm run build` fails to minify
+Token refresh mechanism
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+User profile page
+
+Note categories & search
+
+📄 License
+
+MIT License
