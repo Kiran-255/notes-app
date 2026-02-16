@@ -1,9 +1,9 @@
 Notes App
 Description
-
 A secure, full-stack Notes application built with the MERN stack. Users can register, authenticate, and manage personal notes.
 
 Features
+
 JWT-based authentication
 User registration & login
 Protected routes
@@ -29,17 +29,20 @@ JWT
 bcrypt
 
 Authentication
+
 Secure password hashing (bcrypt)
 JWT token generation on login
 Token verification via middleware
 Protected API endpoints
 
 Database
+
 Cloud-hosted MongoDB Atlas
 Mongoose ODM for schema modeling
 Secure environment-based connection
 
 Project Structure
+
 client → React frontend
 server
 config → Database configuration
@@ -49,6 +52,7 @@ controllers → Business logic
 middleware → Authentication & error handling
 
 Future Improvements
+
 Token refresh system
 User profile management
 Note categories & search
